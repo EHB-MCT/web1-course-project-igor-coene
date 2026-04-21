@@ -5,8 +5,11 @@
   box-sizing: border-box;
 }
 body {
-  background: white;
   width: 100%;
+}
+
+nav {
+  border-bottom: 1px solid black;
 }
 
 .title {
@@ -16,6 +19,26 @@ body {
   font-size: 2.5rem;
   text-align: center;
   margin-top: 0.5rem;
+}
+.title2 {
+  font-family: "Oi", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 150px;
+  margin-bottom: -10px;
+}
+.bar {
+  width: 45%;
+  height: 1px;
+  background: black;
+}
+.bar2 {
+  width: 100%;
+  height: 1px;
+  background: black;
+  margin-top: 104px;
 }
 
 .hamburger,
@@ -29,7 +52,7 @@ body {
   height: 36px;
 }
 .hamburger {
-  background: white;
+  background: none;
 }
 .hamburger img,
 .close img {
@@ -45,6 +68,7 @@ body {
   height: 100vh;
   overflow: hidden;
   list-style: none;
+  color: white;
   background: red;
   display: flex;
   flex-flow: column nowrap;
@@ -54,7 +78,6 @@ body {
   transition: transform 0.2s ease;
 }
 .navbar:target {
-  /* show navbar */
   transform: translateY(0);
 }
 li a {
@@ -72,4 +95,62 @@ li a {
 li a:hover,
 li a:focus {
   border-bottom: 1px solid white;
+}
+
+.about_me {
+  margin-top: 120px;
+  width: 100%;
+}
+.about_me p {
+  width: 40%;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-family: "Oxygen", sans-serif;
+}
+.profile_picture {
+  position: absolute;
+  right: 20px;
+  width: 400px;
+  height: auto;
+  border-right: 1px solid black;
+  top: -100px;
+}
+
+.button {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 20%;
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.button:hover,
+.button:focus {
+  background: black;
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1rem;
+  }
+  .title2 {
+    font-size: 0.8rem;
+    margin-left: 20px;
+    margin-bottom: 1px;
+  }
+  .hamburger img,
+  .close img {
+    width: 50%;
+    height: 50%;
+  }
+  .hamburger {
+    top: 10px;
+  }
+  .profile_picture {
+    width: 200px;
+    top: 120px;
+    border: none;
+  }
 }
