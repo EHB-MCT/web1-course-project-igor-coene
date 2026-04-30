@@ -8,6 +8,8 @@
       description="A portfolio website showcasing my projects and skills."
     />
     <meta keywords="portfolio, projects, design" />
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <title>School Projects</title>
   </head>
@@ -22,10 +24,51 @@
           <img src="images/hamburger_open.png" alt="close" />
         </a>
       </ul>
-      <h1 class="title">School Projects</h1>
+      <h1 class="title3">School Projects</h1>
       <a class="hamburger" href="#navbar">
         <img src="images/hamburger_open.png" alt="menu" />
       </a>
     </nav>
+
+    <div class="loader">
+      <div class="loader__text">0%</div>
+    </div>
+
+    <div class="slides__wrapper">
+      <button class="slider--btn slider--btn__prev">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+      </button>
+
+      <div class="slides"></div>
+      <div class="slides--infos"></div>
+
+      <button class="slider--btn slider--btn__next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </button>
+    </div>
   </body>
 </html>
